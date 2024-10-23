@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Responsive Contact Form</title>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="contact-info">
+				<h2>Contact Us</h2>
+				<p>Let us know your queries, feedbacks, and inquiries. We are here to support you 24/7.</p>
+				<div class="info-item">
+					<img src="./assets/images/phone-icon.webp" alt="Phone Icon" />
+					<p>Give us a call<br />+91 9736097320</p>
+				</div>
+				<div class="info-item">
+					<img src="./assets/images/message-icon.webp" alt="Email Icon" />
+					<p>Write to us<br />cs@guvi.in</p>
+				</div>
+				<div class="info-item">
+					<img src="./assets/images/location-icon.webp" alt="Location Icon" />
+					<p>Visit us in Chennai @<br />IITM Research Park – Chennai, Tamil Nadu 600113</p>
+				</div>
+			</div>
+			<div class="contact-form">
+				<h2>Say <span class="highlight">Hello!</span></h2>
+				<p>Feel free to stop by and say hi!</p>
+				<!-- Form submission uses onsubmit attribute to call the TypeScript function -->
+				<form id="contactForm" onsubmit="return handleSubmit(event)">
+					<label for="name">Name *</label>
+					<input type="text" id="name" name="name" required />
+
+					<label for="email">E-mail id *</label>
+					<input type="email" id="email" name="email" required />
+
+					<label for="contactNumber">Contact Number *</label>
+					<input type="tel" id="contactNumber" name="number" required />
+
+					<label for="subject">Subject *</label>
+					<input type="text" id="subject" name="subject" required />
+
+					<label for="message">Message *</label>
+					<textarea id="message" name="message" rows="4" required></textarea>
+
+					<button type="submit">Send</button>
+					<p id="responseMessage"></p>
+				</form>
+			</div>
+		</div>
+		<!-- Link to compiled TypeScript file -->
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html>
