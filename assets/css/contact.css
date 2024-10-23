@@ -8,6 +8,7 @@
 
 .contact-info {
 	padding-top: 50px;
+	color: black;
 }
 
 .contact-form {
@@ -21,14 +22,12 @@
 .contact-info h2,
 .contact-form h2 {
 	font-size: 24px;
-	color: #333;
 }
 
 .contact-info p,
 .contact-form p {
 	font-size: 14px;
 	margin: 10px 0;
-	color: #555;
 }
 
 .info-item {
@@ -66,6 +65,7 @@
 
 .contact-form button {
 	margin-top: 20px;
+	width: 100%;
 	padding: 10px;
 	background-color: #28a745;
 	color: #fff;
@@ -73,6 +73,8 @@
 	border-radius: 5px;
 	font-size: 16px;
 	cursor: pointer;
+	box-shadow: 1px 5px 10px 1px #0000002e;
+	font-weight: 900;
 }
 
 .contact-form button:hover {
